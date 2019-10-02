@@ -6,10 +6,19 @@
 
 #include <iostream>
 
+
 int main() {
     // This will add numbers
-    const number;
+
+    // Defining seed as the time using time(NULL)
+    srand(time(NULL));
+
+    // variables
+    int number = rand() % 3 + 1;
     int guess;
+
+    // Welcome statement
+    std::cout << "Welcome, this is the NUMBER GUESSER." << std::endl;
 
     // input
     std::cout << "\nGuess the number: " << std::endl;
@@ -18,6 +27,8 @@ int main() {
     // process
     if (guess == number) {
         // output
-        std::cout << "You got it.";
+        std::cout << "Good job, you got it.";
+    } else {
+        std::cout << "you got it wrong.";
     }
 }

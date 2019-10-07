@@ -14,7 +14,7 @@ int main() {
     srand(time(NULL));
 
     // variables
-    int number = rand() % 3 + 1;
+    int number = rand() % 100 + 1;
     int guess;
 
     // Welcome statement
